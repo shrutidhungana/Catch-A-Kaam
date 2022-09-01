@@ -1,16 +1,26 @@
-import React from 'react'
+import React from "react";
+import background from '../../Assets/background.jpg'
+import Testimonial from "../Testimonials/Testimonial";
 
 const Homepage = () => {
   return (
-      <div>
+    <div>
       <q>The only great work is to love what you do </q>
       <cite>-Steve Jobs</cite>
       <h1> Find the best freelancing Service here</h1>
-      <p>Catch A Kaam is best platform if you want to post any freelancing project you have and also if you want best price for your project.  </p>
-  <p>Please Login or Register to continue</p>
-  <button>Login</button>
-      </div>
-  )
-}
+      <img src = {background} alt = "img" />
+      <p>
+        Catch A Kaam is best platform if you want to post any freelancing
+        project you have and also if you want best price for your project. It
+        also provides you the best freelancing services.
+      </p>
+      <p>Catch-A-Kaam helps you get best offering of any projects you want to do for the freelancerr as well.</p>
+      <Testimonial />
+      <p>Please Login or Register to continue</p>
+      
+      <button>Login</button>
+    </div>
+  );
+};
 
-export default Homepage
+export default Homepage;

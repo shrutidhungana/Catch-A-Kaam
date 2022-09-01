@@ -5,6 +5,8 @@ import NavBar from '../Components/NavBar/NavBar'
 import Homepage from '../Components/Homepage/Homepage'
 import Footer from '../Components/Footer/Footer'
 
+
+
 const AppRouter = () => {
   return (
       <div>
@@ -13,10 +15,11 @@ const AppRouter = () => {
               <NavBar />
               <Routes>
                   <Route exact path="/" element={<Homepage />} />
-
                   
               </Routes>
+              
               <Footer />
+              
               </Router>
       </div>
   )
