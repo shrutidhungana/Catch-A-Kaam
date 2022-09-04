@@ -16,7 +16,9 @@ const Footer = () => {
       <Link to="/about">
         <p>Testimonial</p>
       </Link>
-      <Link to="/contact">Contact Us</Link>
+      <Link to="/contact">
+        <p>Contact Us</p>
+      </Link>
       <Link to="/contact">
         <p> Kathmandu </p>
       </Link>
@@ -27,14 +29,17 @@ const Footer = () => {
         <p>Biratnagar</p>
           </Link>
           <Link to="/profile">
-              <p>Coding</p>
+              <p>Services</p>
           </Link>
           <Link to="/profile">
               <p>Content Writing</p>
-          </Link>
-          <Link to="/profile">
-              <p>Quality Analysis</p>
-          </Link>
+      </Link>
+      <Link to = "/profile">
+     <p> Quality Analysis </p>
+      </Link>
+      <Link to = "/profile">
+      <p> Coding </p>
+       </Link>
     </footer>
   );
 };

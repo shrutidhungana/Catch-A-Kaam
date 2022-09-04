@@ -14,7 +14,7 @@ const Homepage = () => {
         project you have and also if you want best price for your project. It
         also provides you the best freelancing services.
       </p>
-      <p>Catch-A-Kaam helps you get best offering of any projects you want to do for the freelancerr as well.</p>
+      <p>Catch-A-Kaam helps you get best offering of any projects you want to do as the freelancerr as well.</p>
       
       <p>Please Login or Register to continue</p>
       

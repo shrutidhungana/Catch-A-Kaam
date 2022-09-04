@@ -1,15 +1,18 @@
 import React from 'react'
-import logo3 from "../../Assets/logo3.png";
+import logo2 from "../../Assets/logo2.png";
 import { AiOutlineMenu } from "react-icons/ai";
+import { Header, Image, Heading, Button } from './HeaderStyle';
+import './Header.css'
+
 
 const Headers = () => {
   return (
-      <header>
-          <img src={logo3} alt="logo" />
-          <h2>Catch A Kaam</h2>
-        <button>Login</button>
+      <Header>
+          <Image src={logo2} alt="logo" />
+          <Heading>Catch A Kaam</Heading>
+        <Button>Login</Button>
         <AiOutlineMenu className="menu" />
-      </header>
+      </Header>
   )
 }
 
