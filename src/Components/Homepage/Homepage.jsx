@@ -1,6 +1,6 @@
 import React from "react";
 import background from '../../Assets/background.jpg'
-import Testimonial from "../Testimonials/Testimonial";
+
 
 const Homepage = () => {
   return (
@@ -15,7 +15,7 @@ const Homepage = () => {
         also provides you the best freelancing services.
       </p>
       <p>Catch-A-Kaam helps you get best offering of any projects you want to do for the freelancerr as well.</p>
-      <Testimonial />
+      
       <p>Please Login or Register to continue</p>
       
       <button>Login</button>
