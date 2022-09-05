@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Footer = styled.footer`
   background-color: #d6cadd;
   padding: 30px 20px;
-  margin-top: 30px;
   width: 100%;
   @media (max-width: 650px) {
     padding: 20px 10px;
@@ -21,7 +20,7 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     max-width: 1000px;
-    margin: 10px 30px; 
+    margin: 10px 30px
     
   }
 `;

@@ -1,10 +1,12 @@
 import React from "react";
 import background from '../../Assets/background.jpg'
+import Testimonial from "./Testimonial/Testimonials";
+import { Homepage, Button } from "./HomepageStyle";
 
 
-const Homepage = () => {
+const Homepages = () => {
   return (
-    <div>
+    <Homepage>
       <q>The only great work is to love what you do </q>
       <cite>-Steve Jobs</cite>
       <h1> Find the best freelancing Service here; the possibilities are endless</h1>
@@ -16,13 +18,15 @@ const Homepage = () => {
         also provides you the best freelancing services.
       </p>
       <p>Catch-A-Kaam helps you get best offering of any projects you want to do as the freelancerr as well.</p>
-      
+      <p>
+        <Testimonial />
+      </p>
       
       <p>Please Login or Register to continue</p>
       
-      <button>Login</button>
-    </div>
+      <Button>Login</Button>
+    </Homepage>
   );
 };
 
-export default Homepage;
+export default Homepages;
