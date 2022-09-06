@@ -1,9 +1,9 @@
 import React from 'react'
 import {ImQuotesLeft, ImQuotesRight} from 'react-icons/im'
-import { Image, Testimonial, Message, User, UserDetails, UserName, Role, Id, Location, Rating, TestimonialWrapper } from './TestimonialCardStyle';
+import { Image, Testimonial,  Message, User, UserDetails, UserName, Role, Id, Location, Rating, TestimonialWrapper } from './TestimonialCardStyle';
 import './TestimonialCard.css'
+  
 
-import 'swiper/css';
 
 const TestimonialCard = (props) => {
     const { testimonial } = props;
@@ -13,8 +13,10 @@ const TestimonialCard = (props) => {
    
 
     return (
-         
-        <Testimonial>
+          
+            
+            <Testimonial>
+            
             <Id>{id }</Id>   
           <ImQuotesLeft className = "left" />
           <Message>{message}</Message>
@@ -30,7 +32,8 @@ const TestimonialCard = (props) => {
               </User>
              
               
-            </Testimonial>
+                </Testimonial>
+                
             
   )
 }

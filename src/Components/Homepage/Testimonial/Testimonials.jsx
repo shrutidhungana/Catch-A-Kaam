@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { Style } from './TestimonialStyle';
 import TestimonialCard from './TestimonialCard/TestimonialCard';
 
+
+    
+
 const Testimonials = () => {
     
     const [testimonials, setTestimonials] = useState([]);
@@ -24,10 +27,15 @@ const Testimonials = () => {
     }, [])
   return (
       <Style>
-          {
-              (testimonials.map((testimonial, index) => (<TestimonialCard testimonial={testimonial} key={`${index}${testimonial.id}` }/>))
-          )}
          
+          {
+                  (testimonials.map((testimonial, index) => (
+                 
+                          <TestimonialCard testimonial={testimonial} key={`${index}${testimonial.id}`} />
+                          
+                          ))
+          )}
+          
       </Style>
   )
 }

@@ -8,6 +8,7 @@ import { Homepage, Button } from "./HomepageStyle";
 const Homepages = () => {
   return (
     <Homepage>
+      <Banner />
       <q>The only great work is to love what you do </q>
       <cite>-Steve Jobs</cite>
       <h1> Find the best freelancing Service here; the possibilities are endless</h1>
@@ -19,13 +20,14 @@ const Homepages = () => {
         also provides you the best freelancing services.
       </p>
       <p>Catch-A-Kaam helps you get best offering of any projects you want to do as the freelancerr as well.</p>
-      <p>
-        <Testimonial />
-      </p>
+     
       
       <p>Please Login or Register to continue</p>
       
       <Button>Login</Button>
+      <p>
+      <Testimonial />
+    </p>
     </Homepage>
   );
 };

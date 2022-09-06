@@ -14,10 +14,12 @@ export const Testimonial = styled.div`
 background-color: #92a1cf;
 color: #fff;
 border-radius: 15px;
-padding: 70px 60px;
+{/*padding: 70px 60px;*/}
 max-width: 768px;
 position: relative;
 margin: 20px;
+
+
 
 
 
