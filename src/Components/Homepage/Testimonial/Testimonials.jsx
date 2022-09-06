@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
-
-import TestimonialCard from './TestimonialCard';
-
+import { Style } from './TestimonialStyle';
+import TestimonialCard from './TestimonialCard/TestimonialCard';
 
 const Testimonials = () => {
     
@@ -24,12 +23,12 @@ const Testimonials = () => {
         getTestimonials();
     }, [])
   return (
-      <div>
+      <Style>
           {
               (testimonials.map((testimonial, index) => (<TestimonialCard testimonial={testimonial} key={`${index}${testimonial.id}` }/>))
           )}
          
-      </div>
+      </Style>
   )
 }
 

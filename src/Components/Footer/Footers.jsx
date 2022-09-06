@@ -27,7 +27,7 @@ const Footers = () => {
               <p>Aim</p>
             </Link>
             <Link to="/about">
-              <p>Visual</p>
+              <p>Vision</p>
             </Link>
             <Link to="/">
               <p>Testimonial</p>

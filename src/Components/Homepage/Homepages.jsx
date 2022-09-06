@@ -1,6 +1,7 @@
 import React from "react";
 import background from '../../Assets/background.jpg'
 import Testimonial from "./Testimonial/Testimonials";
+import Banner from "./Banner/Banner";
 import { Homepage, Button } from "./HomepageStyle";
 
 

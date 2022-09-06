@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const Footer = styled.footer`
   background-color: #d6cadd;
   padding: 30px 20px;
-  width: 100%;
+  width: 97.8%;
   @media (max-width: 650px) {
-    padding: 20px 10px;
+    padding: 10px 20px;
   }
 `;
 
