@@ -3,6 +3,11 @@ import styled from "styled-components";
 export const About = styled.div`
   background-image: linear-gradient(90deg, #c0c0c0, #dcdcdc, #fbab60);
   margin: -21px 0px;
+  @media(768px){
+    background-image: linear-gradient(90deg, #c0c0c0, #dcdcdc, #fbab60);
+
+
+  }
 `;
 
 export const Heading = styled.h1`
@@ -20,17 +25,28 @@ export const Image = styled.img`
   object-fit: content;
   margin: auto;
   display: block;
+  @media(max-width:768px){
+    
+    width: 150px;
+    height: auto;
+  }
 `;
 
 export const Paragraph = styled.p`
   text-align: justify;
   margin-left: 600px;
   margin-right: 600px;
+  @media(max-width: 768px){
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: justify;
+  }
 `;
 
 export const Italic = styled.em`
   display: flex;
   justify-content: center;
+  flex-wrap:wrap;
   margin-top: 120px;
   opacity: 50%;
 `;
@@ -57,24 +73,39 @@ export const Icons = styled.div`
 `;
 export const Quote = styled.blockquote`
   margin: 0px 500px;
+  @media(max-width: 768px){
+    margin: 0px 90px
+  }
 `;
 
 export const Para = styled.p`
   margin-top: -15px;
   text-align: right;
   margin-right: 1055px;
+  @media(max-width: 768px){
+   display: none;
+  }
 `;
 
 export const Citation = styled.cite`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: -40px;
   margin-right: 180px;
+  @media(max-width: 768px){
+    margin-right: 9px;
+    margin-top: -20px
+  }
 `;
 
 export const Horizontal = styled.hr`
     margin-left: 500px;
     margin-right: 500px;
-    opacity: 60%
+    opacity: 60%;
+    @media(max-width: 768px){
+      margin-left: 100px;
+      margin-right: 100px;
+    }
 
 `

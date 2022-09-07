@@ -37,13 +37,13 @@ const Footers = () => {
             <Heading>Contact Us</Heading>
 
             <Link to="/contact">
-              <p> Kathmandu </p>
+              <p> Address </p>
             </Link>
             <Link to="/contact">
-              <p>Pokhara</p>
+              <p>Phone</p>
             </Link>
             <Link to="/contact">
-              <p>Biratnagar</p>
+              <p>Email</p>
             </Link>
           </Column>
           <Column>
