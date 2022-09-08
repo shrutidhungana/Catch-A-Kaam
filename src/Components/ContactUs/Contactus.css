@@ -5,3 +5,9 @@
   background-position: center;
   opacity: 50%;
 }
+
+@media(max-width: 768px){
+    .bg{
+        background-repeat: repeat-x
+    }
+}

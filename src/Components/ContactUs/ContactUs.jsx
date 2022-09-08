@@ -23,7 +23,7 @@ const ContactUs = () => {
                 <Paragraph1>You can contact us via credentials given below: </Paragraph1>
                 <Contacts />
                 
-          <Paragraph2>Also you can send us anything regarding the website you have  in the form below:</Paragraph2>
+          <Paragraph2>Also, you can send us anything regarding the website you have  in the form below:</Paragraph2>
                     <ContactForm />
                     
                 </div>

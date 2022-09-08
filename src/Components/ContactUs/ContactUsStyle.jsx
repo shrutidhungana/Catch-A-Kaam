@@ -22,6 +22,9 @@ text-align: left;
 color: white;
 margin-left: 180px;
 margin-top: 100px;
+@media(max-width: 768px){
+   margin-left: 0px
+}
 
 `
 export const Paragraph2 = styled.p`
@@ -29,4 +32,9 @@ export const Paragraph2 = styled.p`
    text-align: right;
    color: white;
    margin-right: 180px;
+   @media(max-width: 768px) {
+      margin-top: 10px;
+      text-align: left;
+      margin-right: 0px;
+   }
 `

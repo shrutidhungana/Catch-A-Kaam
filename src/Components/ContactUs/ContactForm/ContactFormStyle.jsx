@@ -8,6 +8,10 @@ export const Container = styled.div`
   border: 1px solid #006400;
   box-sizing: border-box;
   color: white;
+  @media(max-width: 768px){
+      width: 490px;
+      margin-left: 10px;
+  }
 `;
 export const Heading = styled.h1`
   text-align: center;
