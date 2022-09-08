@@ -1,21 +1,26 @@
 import React from 'react'
+import {
+    Select,
+    Selects,
+    Option
+} from './SelectStyle';
 
 const SelectField = (props) => {
-    const { label, handleChange, name } = props;
+    const {  handleChange, name } = props;
   return (
-      <div>
-          <label htmlFor={name}>{label}</label>
-          <select onChange={handleChange}
+      <Selects>
+         
+          <Select onChange={handleChange}
               defaultValue="role"
               name = {name}
           >
-          <option value="role" disabled>Choose Role</option>
-          <option value="freeLancer">FreeLancer</option>
-          <option value="client">Client</option>
+          <Option value="role" disabled>Choose Role</Option>
+          <Option value="freeLancer">FreeLancer</Option>
+          <Option value="client">Client</Option>
          
               
-          </select>
-      </div>
+          </Select>
+      </Selects>
   )
 }
 

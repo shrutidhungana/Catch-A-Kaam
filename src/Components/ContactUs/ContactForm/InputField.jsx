@@ -1,16 +1,21 @@
 import React from 'react'
+import {
+    Input,
+    Inputs
+    
+} from './InputStyle';
 
 const InputField = (props) => {
-    const {handleChange, name, type, value, placeholder, label } = props;
+    const {handleChange, name, type, value, placeholder } = props;
   return (
-      <div>
-          <label htmlFor={name}>{label }</label>
-          <input type={type}
+      <Inputs>
+          
+          <Input type={type}
               onChange={handleChange}
               value={value}
               name={name}
               placeholder={placeholder} required /> 
-      </div>
+      </Inputs>
   )
 }
 

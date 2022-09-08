@@ -1,18 +1,22 @@
 import React from 'react'
+import {
+  TextArea,
+  TextAreas
+} from './TextAreaStyle';
 
 const TextAreaField = (props) => {
-  const { handleChange, name, value, placeholder, label} = props;
+  const { handleChange, name, value, placeholder} = props;
 
   return (
-    <div>
-      <label htmlFor={name}>{label }</label>
-      <textarea name={name}
-        rows="4"
+    <TextAreas>
+     
+      <TextArea name={name}
+        rows="5"
         onChange={handleChange}
         value={value}
         placeholder= {placeholder}
-      ></textarea>
-      </div>
+      ></TextArea>
+      </TextAreas>
   )
 }
 

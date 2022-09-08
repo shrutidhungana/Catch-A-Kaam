@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Contact = styled.div`
-margin-top: -21px;
+margin-top: -22px;
 `
 
 
@@ -24,26 +24,9 @@ margin-left: 180px;
 margin-top: 100px;
 
 `
-
-export const Left = styled.div`
-margin-left: 200px;
-`
-
-
-export const Heading3 = styled.h3`
-color:#ff8c00;
-margin-left: 150px;
-margin-top: -30px;
-cursor: pointer;
-`
-export const Paragraph2 = styled.div`
+export const Paragraph2 = styled.p`
+   margin-top: -314px;
+   text-align: right;
    color: white;
-   margin-left: 150px;
-   margin-top: -10px;
-   cursor: pointer;
-`
-
-export const Paragraph3 = styled.div`
-   margin: 25px 0 0 100px;
-   
+   margin-right: 180px;
 `

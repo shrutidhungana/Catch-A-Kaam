@@ -4,7 +4,6 @@ export const Footer = styled.footer`
   background-color: #d6cadd;
   padding: 30px 20px;
   width: 97.8%;
-  margin-top: -px;
   @media (max-width: 650px) {
     padding: 10px 20px;
   }
