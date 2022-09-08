@@ -8,6 +8,6 @@
 
 @media(max-width: 768px){
     .bg{
-        background-repeat: repeat-x
+        background-repeat: repeat-x;
     }
 }

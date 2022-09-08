@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { Heading3, Paragraph2, Paragraph3, Left } from "./ContactStyle";
 import "./Contact.css";
 
-const Contact = () => {
+const Contacts = () => {
   return (
     <div>
       <Left>
@@ -41,4 +41,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contacts;
