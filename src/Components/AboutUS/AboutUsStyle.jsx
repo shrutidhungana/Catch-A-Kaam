@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const About = styled.div`
   background-image: linear-gradient(90deg, #c0c0c0, #dcdcdc, #fbab60);
   margin: -21px 0px;
+  width: 100vw;
   @media(768px){
     background-image: linear-gradient(90deg, #c0c0c0, #dcdcdc, #fbab60);
 

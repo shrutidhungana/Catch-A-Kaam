@@ -31,7 +31,7 @@ const Contacts = () => {
           </Paragraph3>
           <Heading3>Email</Heading3>
           <Paragraph2>
-            <a href="mailto: shrutidhungana123@gmail.com ">
+            <a href="mailto: shrutidhungana123@gmail.com " className = "link">
               shrutidhungana123@gmail.com
             </a>
           </Paragraph2>

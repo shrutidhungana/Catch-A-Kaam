@@ -1,8 +1,10 @@
 import React from "react";
 import Testimonial from "./Testimonial/Testimonials";
+import { Link } from "react-router-dom";
 import Banners from "./Banner/Banners";
 import { Homepage, Button } from "./HomepageStyle";
 import Text from "./Text/Text";
+import './Homepage.css'
 
 
 const Homepages = () => {
@@ -13,8 +15,10 @@ const Homepages = () => {
     
       
       <p>Please Login or Register to continue</p>
-     
-      <Button>Login</Button>
+      <Button>
+        <Link to = "/login" className = "link">Login</Link>
+      </Button>
+      
       <p>
       <Testimonial />
     </p>

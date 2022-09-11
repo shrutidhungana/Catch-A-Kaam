@@ -6,6 +6,7 @@ export const Header = styled.header`
   justify-content: space-between;
   align-items: center;
   margin-bottom: -16px;
+  width: 100vw;
   
 `;
 
@@ -19,7 +20,7 @@ export const Heading = styled.h2`
   font-size: 16px;
 `;
 
-export const Button = styled.button`
+export const Button = styled.p`
  border: 2px solid #9457eb;
  background-color: #9457eb;
  color: white;

@@ -7,10 +7,12 @@ export const Container = styled.div`
   margin-left: 60%;
   border: 1px solid #006400;
   box-sizing: border-box;
+  border-radius: 50px;
   color: white;
   @media(max-width: 768px){
       width: 490px;
       margin-left: 10px;
+     
   }
 `;
 export const Heading = styled.h1`
