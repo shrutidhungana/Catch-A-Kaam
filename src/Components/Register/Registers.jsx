@@ -1,67 +1,89 @@
-import React from "react";
-import InputField from "./InputField";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate} from "react-router-dom";
+import {  Alert } from "react-bootstrap";
 import "./Register.css";
+
+import { useUserAuth } from "../../Context/UserAuthContext";
 import {
   Register,
   Heading,
   Button,
   Paragraph,
   Paragraph1,
+  Labels,
+  Label,
+  Input,
+  Inputs
 } from "./RegisterStyle";
+const Signup = () => {
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+  const [password, setPassword] = useState("");
+  const { signUp } = useUserAuth();
+  let navigate = useNavigate()
 
-const Registers = () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    try {
+      await signUp(email, password);
+      navigate("/login");
+    } catch (err) {
+      setError(err.message);
+    }
+  };
+
   return (
-    <div className="background">
-      <Heading>Enter the following to register:</Heading>
+      <div className = "background">
+      
+        <Heading>Enter the following to register:</Heading>
+      {error && <Alert variant="danger">{error}</Alert>}
       <Register>
-        <form>
-          <div>
-            <InputField
-              type="text"
-              name="fullName"
-              placeholder="Full Name"
-              required
-              label="Full Name:"
-            />
-          </div>
-          <div>
-            <InputField
+        <form onSubmit={handleSubmit}>
+         
+            <Labels>
+              <Label htmlFor="email">Email:</Label>
+          </Labels>
+          <Inputs>
+            <Input
               type="email"
-              placeholder="E-mail"
-              name="E-mail"
+              placeholder="Email address"
               required
-              label="Email:"
+              onChange={(e) => setEmail(e.target.value)}
             />
-          </div>
-          <div>
-            <InputField
+            </Inputs>
+          
+            <Labels>
+              <Label htmlFor="password">Password:</Label>
+          </Labels>
+          <Inputs>
+            <Input
               type="password"
               placeholder="Password"
-              required
-              name="Password"
-              label="Password:"
+              onChange={(e) => setPassword(e.target.value)}
             />
-          </div>
-          <div>
-            <InputField
-              type="password"
-              placeholder="Confirm Password:"
-              required
-              name="confirmPassword"
-              label="Confirm Password"
-            />
-          </div>
+            </Inputs>
 
-          <Button>Create Account</Button>
-          <Paragraph>Already have an account?</Paragraph>
+          
+            <Button variant="primary" type="Submit">
+              Create Account
+            </Button>
+          
+          <Paragraph>
+            Already have an account?
+          </Paragraph>
           <Paragraph1 className="paragraph">
-            <Link to="/login">Login</Link>
+          <Link to="/login">
+          Log In
+        </Link>
           </Paragraph1>
+            
+      
         </form>
       </Register>
-    </div>
+     
+      </div>
   );
 };
 
-export default Registers;
+export default Signup;
