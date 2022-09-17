@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Homepage = styled.div`
 background-image: linear-gradient(90deg,#c0c0c0,#dcdcdc, #fbab60);
 margin-bottom: -20px;
-width: 100vw;
+
 `
 
 export const Button = styled.p`

@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const Header = styled.header`
   background-color: #d6cadd;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: -16px;
-  width: 100vw;
+  
   
 `;
 
@@ -26,5 +26,5 @@ export const Button = styled.p`
  color: white;
  font-size: 18px;
  padding: 5px 7px;
-
+  cursor: pointer;
 `;

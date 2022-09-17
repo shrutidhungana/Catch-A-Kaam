@@ -1,20 +1,64 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import logo1 from "../../Assets/logo1.png";
 import { AiOutlineMenu } from "react-icons/ai";
-import {Link} from 'react-router-dom'
-import { Header, Image, Heading, Button } from './HeaderStyle';
+import { Link, useNavigate } from 'react-router-dom'
+import { useUserAuth } from '../../Context/UserAuthContext';
+import {
+  getAuth,
+  onAuthStateChanged
+} from 'firebase/auth';
+
+import {
+  Header,
+  Image,
+  Heading,
+  Button
+} from './HeaderStyle';
 import './Header.css'
 
 
 const Headers = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const auth = getAuth();
+    onAuthStateChanged(auth, (user) => {
+      setIsLoggedIn(!!user);
+    });
+  }, []);
+
+  const { logOut, user } = useUserAuth()
+  let navigate = useNavigate()
+  const handleLogout = async () => {
+    try {
+      await logOut();
+      navigate("/");
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
+  
+ 
   return (
       <Header>
           <Image src={logo1} alt="logo" />
-          <Heading>Catch A Kaam</Heading>
-      <Button>
-        <Link to = "/login">Login</Link>
-      </Button>
-        <AiOutlineMenu className="menu" />
+      <Heading>Catch A Kaam</Heading>
+      {!isLoggedIn &&
+        <Button>
+          <Link to="/login" className="ln">Login</Link>
+        </Button>
+      }
+      {isLoggedIn &&
+        <div>
+          
+        <Button  onClick={handleLogout}>
+          Logout
+          </Button>
+          </div>
+       }
+      
+      
       </Header>
   )
 }
