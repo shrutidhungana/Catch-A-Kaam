@@ -28,12 +28,8 @@ const AboutUs = () => {
       <Content>
         <Heading>Catch-A-Kaam</Heading>
         <Paragraph>
-          This is a fictional website. The main idea of the website is it gives
-          chances to freelancers to take a project and complete it on their pace
-          of time. Also it provides people to put their prices so that
-          freelancers will choose their project accordingly. The website also
-          give people an insight on what kind of services are given by the
-          freelancers. Overall, this website is only created for practice.
+          This is a fictional website. The main idea of the website is that client can add their project. The list of credential a client can include in the project could be its name, date posted,address of client or company,description, features to include, the tech stack they would want to use, the expected time to complete the project, the expected amount freelancers are willing to take so that the freelancers would decide if thay would like to take the project or not depending on their requirements,skills,calibre and if they could complete the project in time.
+          
         </Paragraph>
 
         <Paragraph>

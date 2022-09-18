@@ -5,7 +5,7 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: -16px;
+  margin-bottom: -18px;
   
   
 `;
@@ -28,3 +28,7 @@ export const Button = styled.p`
  padding: 5px 7px;
   cursor: pointer;
 `;
+
+export const UserEmail = styled.p`
+color: white;
+`
