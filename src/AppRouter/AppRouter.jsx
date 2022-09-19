@@ -10,6 +10,7 @@ import Logins from '../Components/Login/Logins'
 import Registers from '../Components/Register/Registers'
 import AddProject from '../Components/AddProject/AddProject'
 import Dashboard from '../Components/Dashboard/Dashboard'
+
 import PrivateRouter from './PrivateRouter'
 
 const AppRouter = () => {
@@ -42,7 +43,7 @@ const AppRouter = () => {
                       </PrivateRouter>
                   }
               />
-                  
+                
               </Routes>
               
               <Footer />

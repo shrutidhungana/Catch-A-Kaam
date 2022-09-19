@@ -56,7 +56,8 @@ const Logins = () => {
       <Login>
         <form onSubmit = {handleSubmit}>
           <Labels>
-            <Label htmlFor="email">Email:</Label>
+            <Label htmlFor="email">Email:
+            </Label>
           </Labels>
           <Inputs>
             <Input
@@ -68,7 +69,8 @@ const Logins = () => {
             />
           </Inputs>
           <Labels>
-            <Label htmlFor="password">Password:</Label>
+            <Label htmlFor="password">Password:
+            </Label>
           </Labels>
           <Inputs>
             <Input

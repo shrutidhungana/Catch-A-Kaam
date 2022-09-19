@@ -1,75 +1,88 @@
 import React, {useState} from 'react'
 import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css";
+import {
+    Project,
+    Button,
+    Inputs,
+    Input,
+    Textarea
+} from './AddProjectFormStyles';
+import './AddProjectForm.css'
 
 const AddProjectForm = () => {
     const [selectedDate, setSelectedDate] = useState("")
+    const [newDate, setNewDate] = useState("")
     return (
-        <div>
+        <Project>
+           
             <form>
-                <div>
+                <Inputs>
                     <label htmlFor="projectName">Project Name:</label>
-                    <input type="text"
+                    <Input type="text"
                         required
                     />
-                </div>
-                <div>
+                </Inputs>
+                <Inputs>
                     <label htmlFor="datePosted">DatePosted:</label>
                     <DatePicker
+                        className = "datepicker"
                         selected={selectedDate}
                         onChange={date => setSelectedDate(date)}
                         required
                     />
-                </div>
-                <div>
+                </Inputs>
+                <Inputs>
                     <label htmlFor="address">Address:</label>
-                    <input type="text"
+                    <Input type="text"
                         required
                     />
-                </div>
-                <div>
+                </Inputs>
+                <Inputs>
                     <label htmlFor="description">Description:</label>
-                    <textarea
+                    <Textarea
                         required
                         rows="6"
                     >
-                    </textarea>
+                    </Textarea>
           
-                </div>
-                <div>
-                    <label htmlFor="features">Features</label>
-                    <textarea
+                </Inputs>
+                <Inputs>
+                    <label htmlFor="features">Features:</label>
+                    <Textarea
                         required
                         rows="6"
                     >
-                    </textarea>
-                </div>
-                <div>
-                    <label htmlFor="tech">Technologies to be used:</label>
-                    <textarea
+                    </Textarea>
+                </Inputs>
+                <Inputs>
+                    <label htmlFor="tech">Technologies to be used(Tech Stack):</label>
+                    <Textarea
                         rows="6"
                         required
                     >
-                    </textarea>
-                </div>
-                <div>
+                    </Textarea>
+                </Inputs>
+                <Inputs>
                     <label htmlFor="time">Expected date to complete:</label>
                     <DatePicker
-                        selected={selectedDate}
-                        onChange={date => setSelectedDate(date)}
+                        className = "datepicker"
+                        selected={newDate}
+                        onChange={date => setNewDate(date)}
                         required
                     />
-                </div>
-                <div>
+                </Inputs>
+                <Inputs>
                     <label htmlFor="amount">Amount willing to pay:</label>
-                    <input
+                    <Input
                         type="text"
                         required
                     />
-                </div>
-                <button>Add Project</button>
-            </form>
-        </div>
+                </Inputs>
+                <Button>Add Project</Button>
+                </form>
+                
+        </Project>
     )
 }
 export default AddProjectForm

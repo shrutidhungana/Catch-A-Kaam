@@ -1,13 +1,16 @@
 import React from 'react'
 import AddProjectForm from './AddProjectForm/AddProjectForm'
+import { Project, Heading } from './AddProjectStyle'
 
 
 const AddProject = () => {
   return (
-    <div>
-      <h1>Add Project of Your Choice:</h1>
+   
+    <Project>
+      <Heading>Add Project of Your Choice:</Heading>
      <AddProjectForm />
-    </div>
+      </Project>
+      
   )
 }
 

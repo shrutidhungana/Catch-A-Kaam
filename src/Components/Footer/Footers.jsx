@@ -49,13 +49,13 @@ const Footers = () => {
           <Column>
             <Heading>Services</Heading>
 
-            <Link to="/profile">
+            <Link to="/dashboard">
               <p>Content Writing</p>
             </Link>
-            <Link to="/profile">
+            <Link to="/dashboard">
               <p> Quality Analysis </p>
             </Link>
-            <Link to="/profile">
+            <Link to="/dashboard">
               <p> Coding </p>
             </Link>
           </Column>
