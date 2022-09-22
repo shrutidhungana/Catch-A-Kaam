@@ -49,4 +49,11 @@ export const Heading = styled.h2`
 color: white;
 font-size: 20px;
 `
+export const Paragraph = styled.p`
+color: white;
 
+`
+export const Span = styled.span`
+margin: 0 2px 0 5px;
+
+`

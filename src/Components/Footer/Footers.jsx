@@ -11,7 +11,8 @@ import {
   Row,
   Column,
   Heading,
-  
+  Paragraph,
+  Span
 } from "./FooterStyle";
 import "./Footer.css"
 
@@ -77,7 +78,12 @@ const Footers = () => {
               </a>
             </p>
           </Column>
-        </Row>
+          </Row>
+          <Paragraph>
+          &copy; {new Date().getFullYear()}<Span>Shruti Dhungana.</Span> All Rights Reserved
+          </Paragraph>
+         
+        
       </Container>
     </Footer>
   );

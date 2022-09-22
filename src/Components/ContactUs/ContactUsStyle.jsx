@@ -22,6 +22,7 @@ text-align: left;
 color: white;
 margin-left: 180px;
 margin-top: 100px;
+font-weight: bold;
 @media(max-width: 768px){
    margin-left: 0px
 }
@@ -31,6 +32,7 @@ export const Paragraph2 = styled.p`
    margin-top: -314px;
    text-align: right;
    color: white;
+   font-weight: bold;
    margin-right: 180px;
    @media(max-width: 768px) {
       margin-top: 10px;

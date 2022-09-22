@@ -16,6 +16,7 @@ export const Login = styled.div`
 export const Heading = styled.h1`
   color: #000080;
   text-align: center;
+  font-weight: bold;
 `;
 
 export const Button = styled.button`
