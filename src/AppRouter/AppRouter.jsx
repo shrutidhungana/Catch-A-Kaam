@@ -8,7 +8,7 @@ import AboutUs from '../Components/AboutUS/AboutUs'
 import ContactUs from '../Components/ContactUs/ContactUs'
 import Logins from '../Components/Login/Logins'
 import Registers from '../Components/Register/Registers'
-import AddProject from '../Components/AddProject/AddProject'
+import AddProject from '../Components/Activity/AddProject'
 import Dashboard from '../Components/Dashboard/Dashboard'
 
 import PrivateRouter from './PrivateRouter'

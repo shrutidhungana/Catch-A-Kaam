@@ -7,12 +7,38 @@ import {
     Inputs,
     Input,
     Textarea
-} from './AddProjectFormStyles';
-import './AddProjectForm.css'
+} from './ProjectFormStyles';
+import './ProjectForm.css'
+
 
 const AddProjectForm = () => {
     const [selectedDate, setSelectedDate] = useState("")
     const [newDate, setNewDate] = useState("")
+    const [values, setValues] = useState({
+        projectName: "",
+        address: "",
+        description: "",
+        features: "",
+        technology: "",
+        amount: ""
+    }
+     )
+
+    
+    const onNameChange = (e) => {
+          
+      }
+    
+    
+    const onDatePostedChange = (date) => {
+       setSelectedDate(date)
+    }
+
+    
+    const onDateCompletionChange = (date) => {
+        setNewDate(date)
+    }
+
     return (
         <Project>
            
@@ -20,6 +46,7 @@ const AddProjectForm = () => {
                 <Inputs>
                     <label htmlFor="projectName">Project Name:</label>
                     <Input type="text"
+                       
                         required
                     />
                 </Inputs>
@@ -28,8 +55,8 @@ const AddProjectForm = () => {
                     <DatePicker
                         className = "datepicker"
                         selected={selectedDate}
-                        onChange={date => setSelectedDate(date)}
-                        required
+                        onChange={onDatePostedChange}
+                       required
                     />
                 </Inputs>
                 <Inputs>
@@ -66,10 +93,10 @@ const AddProjectForm = () => {
                 <Inputs>
                     <label htmlFor="time">Expected date to complete:</label>
                     <DatePicker
-                        className = "datepicker"
+                        className="datepicker"
                         selected={newDate}
-                        onChange={date => setNewDate(date)}
-                        required
+                        onChange={onDateCompletionChange}
+                       required
                     />
                 </Inputs>
                 <Inputs>
