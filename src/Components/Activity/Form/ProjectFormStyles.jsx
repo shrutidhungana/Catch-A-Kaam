@@ -7,7 +7,7 @@ export const Project = styled.div`
   height: ;
 `;
 
-export const Button = styled.div`
+export const Button = styled.button`
   background-color: #ff8c00;
   color: white;
   border: 2px solid #ff8c00;
@@ -17,7 +17,7 @@ export const Button = styled.div`
   padding: 10px 10px;
   font-size: 16px;
   cursor: pointer;
-  width: 100px;
+  width: 125px;
   text-align: center;
 `;
 

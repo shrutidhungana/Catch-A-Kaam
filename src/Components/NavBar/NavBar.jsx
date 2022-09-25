@@ -67,7 +67,7 @@ const NavBar = () => {
         {isLoggedIn&&
           <div>
             <li>
-              <Link to="/addproject">Add project</Link>
+              <Link to="/addproject">Add Project</Link>
             </li>
           </div>
         }

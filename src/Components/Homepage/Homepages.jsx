@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import Testimonial from "./Testimonial/Testimonials";
+
 import { Link } from "react-router-dom";
 import Banners from "./Banner/Banners";
 import { Homepage, Button } from "./HomepageStyle";
@@ -22,6 +22,7 @@ const Homepages = () => {
   return (
     <Homepage>
       <div>
+        <h1>Welcome to Catch-A-Kaam</h1>
         <Banners />
         <Text />
         {!isLoggedIn &&
@@ -34,7 +35,7 @@ const Homepages = () => {
             </div>
         }
       
-        <Testimonial />
+    
       </div>
     </Homepage>
   );

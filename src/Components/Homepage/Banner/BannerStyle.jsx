@@ -5,6 +5,7 @@ export const Banner = styled.div`
   border: 1px solid green;
   overflow: auto;
   background-color: white;
+  margin-left: 50px;
   
 `;
 export const Image = styled.img`

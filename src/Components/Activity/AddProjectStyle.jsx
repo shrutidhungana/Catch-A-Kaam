@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Project = styled.div`
-height: 130vh;
+height: 200vh;
 margin-top: -21px;
 
 
