@@ -8,10 +8,12 @@ import AboutUs from '../Components/AboutUS/AboutUs'
 import ContactUs from '../Components/ContactUs/ContactUs'
 import Logins from '../Components/Login/Logins'
 import Registers from '../Components/Register/Registers'
-import AddProject from '../Components/Activity/AddProject'
+import AddProject from '../Components/Activity/AddProject/AddProject'
 import Dashboard from '../Components/Dashboard/Dashboard'
 
 import PrivateRouter from './PrivateRouter'
+import ProjectProvider from '../Context/ProjectContext'
+
 
 const AppRouter = () => {
   return (
@@ -27,20 +29,27 @@ const AppRouter = () => {
                   <Route path="/contact" element={<ContactUs />} />
                   <Route path="/login" element={<Logins />} />
                   <Route path="/register" element={<Registers />} />
+                  
                   <Route path="/addproject"
                       element=
                       {
-                          <PrivateRouter>
-                          <AddProject />
-                          </PrivateRouter>
+                               <ProjectProvider>
+                              <PrivateRouter>
+                                  <AddProject />
+                              </PrivateRouter>
+                              </ProjectProvider>
+                              
+                          
                       }
                   />
                   <Route path="/dashboard"
                   element=
                   {
+                    <ProjectProvider>
                       <PrivateRouter>
                       <Dashboard />
                       </PrivateRouter>
+                      </ProjectProvider>
                   }
               />
                 

@@ -1,12 +1,12 @@
 import React from 'react'
-import ProjectItems from '../Activity/ProjectItems/ProjectItems'
+import ProjectList from '../Activity/ProjectList/ProjectList'
 
 
 
 const Dashboard = () => {
   return (
     <div>
-     
+    <ProjectList />
       
       
     </div>

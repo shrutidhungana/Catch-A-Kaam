@@ -60,13 +60,6 @@ const NavBar = () => {
         {isLoggedIn&&
           <div>
             <li>
-              <Link to="/contact">Contact Us</Link>
-            </li>
-          </div>
-        }
-        {isLoggedIn&&
-          <div>
-            <li>
               <Link to="/addproject">Add Project</Link>
             </li>
           </div>
@@ -79,6 +72,15 @@ const NavBar = () => {
             </li>
           </div>
         }
+
+        {isLoggedIn&&
+          <div>
+            <li>
+              <Link to="/contact">Contact Us</Link>
+            </li>
+          </div>
+        }
+       
       </List>
       
       
