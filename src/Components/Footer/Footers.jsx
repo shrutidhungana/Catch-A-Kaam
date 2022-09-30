@@ -30,8 +30,8 @@ const Footers = () => {
             <Link to="/about">
               <p>Vision</p>
             </Link>
-            <Link to="/">
-              <p>Testimonial</p>
+            <Link to="/about">
+              <p>Developer</p>
             </Link>
           </Column>
           <Column>

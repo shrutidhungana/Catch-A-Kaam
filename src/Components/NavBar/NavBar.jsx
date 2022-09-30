@@ -57,13 +57,7 @@ const NavBar = () => {
             </li>
           </div>
         }
-        {isLoggedIn&&
-          <div>
-            <li>
-              <Link to="/addproject">Add Project</Link>
-            </li>
-          </div>
-        }
+
         {isLoggedIn&&
           <div>
             
@@ -72,6 +66,14 @@ const NavBar = () => {
             </li>
           </div>
         }
+        {isLoggedIn&&
+          <div>
+            <li>
+              <Link to="/addproject">Add Project</Link>
+            </li>
+          </div>
+        }
+        
 
         {isLoggedIn&&
           <div>

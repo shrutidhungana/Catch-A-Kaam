@@ -10,9 +10,9 @@ import Logins from '../Components/Login/Logins'
 import Registers from '../Components/Register/Registers'
 import AddProject from '../Components/Activity/AddProject/AddProject'
 import Dashboard from '../Components/Dashboard/Dashboard'
-
+import EditProject from '../Components/Activity/EditProject/EditProject'
 import PrivateRouter from './PrivateRouter'
-import ProjectProvider from '../Context/ProjectContext'
+import AppProvider from '../Context/AppContext'
 
 
 const AppRouter = () => {
@@ -33,26 +33,47 @@ const AppRouter = () => {
                   <Route path="/addproject"
                       element=
                       {
-                               <ProjectProvider>
-                              <PrivateRouter>
+                              
+                         <PrivateRouter>
+                                  <AppProvider>
                                   <AddProject />
-                              </PrivateRouter>
-                              </ProjectProvider>
+                                  </AppProvider>
+                             
+                                  </PrivateRouter>
+                              
                               
                           
                       }
                   />
+                  <Route path="/edit/:id"
+                  element=
+                  {
+                          
+                     <PrivateRouter>
+                              <AppProvider>
+                              <EditProject />
+                              </AppProvider>
+                         
+                              </PrivateRouter>
+                          
+                          
+                      
+                  }
+              />
+
                   <Route path="/dashboard"
                   element=
                   {
-                    <ProjectProvider>
+                   
                       <PrivateRouter>
-                      <Dashboard />
-                      </PrivateRouter>
-                      </ProjectProvider>
+                              <AppProvider>
+                              <Dashboard />
+                              </AppProvider>
+                              </PrivateRouter>
+                     
                   }
               />
-                
+              
               </Routes>
               
               <Footer />
