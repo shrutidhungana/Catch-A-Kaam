@@ -58,14 +58,7 @@ const NavBar = () => {
           </div>
         }
 
-        {isLoggedIn&&
-          <div>
-            
-            <li>
-              <Link to="/dashboard">Dashboard</Link>
-            </li>
-          </div>
-        }
+      
         {isLoggedIn&&
           <div>
             <li>
@@ -74,7 +67,14 @@ const NavBar = () => {
           </div>
         }
         
-
+        {isLoggedIn&&
+          <div>
+            
+            <li>
+              <Link to="/dashboard">Dashboard</Link>
+            </li>
+          </div>
+        }
         {isLoggedIn&&
           <div>
             <li>

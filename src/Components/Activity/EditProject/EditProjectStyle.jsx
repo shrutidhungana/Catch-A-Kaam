@@ -5,5 +5,6 @@ text-align: center;
 font-weight: bold;
 `
 export const Div = styled.div`
-margin: 0 auto
+margin: 0 auto;
+height: 140vh;
 `

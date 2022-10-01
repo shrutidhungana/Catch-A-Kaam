@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { AppContext } from '../../../../Context/AppContext'
+import { Add,Input,Inputs,Textarea,Button, Button1 } from './EditFormStyle';
 
+import './EditForm.css'
 const EditForm = () => {
     const [selectedProject, setSelectedProject] = useState({
         id: null,
@@ -12,8 +14,10 @@ const EditForm = () => {
         features: "",
         techStack: "",
         dateCompleted: "",
-        amount:""
+        amount: ""
     })
+
+    
     const { projects, editProject } = useContext(AppContext)
     let navigate = useNavigate()
     const { id } = useParams()
@@ -24,6 +28,7 @@ const EditForm = () => {
             (currentProjectTraversal) => currentProjectTraversal.id === parseInt(projectId)
         );
         setSelectedProject(selectedProject)
+        
     }, [id, projects])
 
 
@@ -46,92 +51,94 @@ const EditForm = () => {
       };
     
   return (
-      <div>
+      <Add>
       <form onSubmit={onSubmit}>
-      <div>
+      <Inputs>
           <label htmlFor="projectName">ProjectName:</label>
-          <input type="text"
+          <Input type="text"
               required
               name = "projectName"
               value={selectedProject.projectName}
               onChange = {(e)=>handleOnChange("projectName",e.target.value)}
           />
-      </div>
-      <div>
+      </Inputs>
+      <Inputs>
           <label htmlFor="datePosted">Date Posted:</label>
-          <input type="date"
+          <Input type="date"
           required
           name = "datePosted"
           value={selectedProject.datePosted}
               onChange = {(e)=>handleOnChange("datePosted",e.target.value)}
       />
 
-      </div>
-      <div>
+      </Inputs>
+      <Inputs>
           <label htmlFor="address">Address:</label>
-          <input type="text"
+          <Input type="text"
           required
           name = "address"
           value={selectedProject.address}
               onChange = {(e)=>handleOnChange("address",e.target.value)}
           />
-      </div>
-      <div>
+      </Inputs>
+      <Inputs>
       <label htmlFor="description">Description:</label>
-          <textarea type="text"
+          <Textarea type="text"
               rows= "6"
       required
       name = "description"
       value={selectedProject.description}
       onChange = {(e)=>handleOnChange("description",e.target.value)}
       />
-      </div>
-      <div>
-      <label htmlFor="features">Features:</label>
-      <textarea type="text"
+      </Inputs>
+      <Inputs>
+      <label htmlFor="features">Features required:</label>
+      <Textarea type="text"
               rows= "6"
       required
       name = "features"
       value={selectedProject.features}
               onChange = {(e)=>handleOnChange("features",e.target.value)}
           />
-      </div>
-      <div>
+      </Inputs>
+      <Inputs>
       <label htmlFor="techStack">Technology to be used(TechStack):</label>
-      <textarea type="text"
+      <Textarea type="text"
               rows= "6"
       required
       name = "techStack"
       value={selectedProject.techStack}
       onChange = {(e)=>handleOnChange("techStack",e.target.value)}
           />
-      </div>
-      <div>
+      </Inputs>
+      <Inputs>
       <label htmlFor="dateCompleted">Expected date to complete:</label>
-      <input type="date"
+      <Input type="date"
               
       required
       name = "dateCompleted"
       value={selectedProject.dateCompleted}
               onChange = {(e)=>handleOnChange("dateCompleted",e.target.value)}
           />
-      </div>
-      <div>
+      </Inputs>
+      <Inputs>
       <label htmlFor="amount">Amount willing to pay:</label>
-      <input type="text"
+      <Input type="text"
               
       required
       name = "amount"
       value={selectedProject.amount}
-              onChange = {(e)=>handleOnChange("amount",e.target.value)}
+      onChange = {(e)=>handleOnChange("amount",e.target.value)}
           />
-      </div>
+      </Inputs>
       <div>
-          <button>Edit Project</button>
-      </div>
-      <Link to = "/">Cancel</Link>
+          <Button>Edit Project</Button>
+              </div>
+              <Button1>
+                  <Link to="/dashboard" className = "lk">Cancel</Link>
+                  </Button1>
   </form>
-      </div>
+      </Add>
   )
 }
 

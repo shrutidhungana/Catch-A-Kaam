@@ -27,6 +27,7 @@ export const Button = styled.p`
  font-size: 18px;
  padding: 5px 7px;
   cursor: pointer;
+  border-radius: 7px;
 `;
 
 export const UserEmail = styled.p`

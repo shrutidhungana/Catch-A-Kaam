@@ -16,6 +16,7 @@ export const Button = styled.p`
  font-size: 18px;
  padding: 5px 7px;
  width: 50px;
+ border-radius: 7px;
 
 
 `;
