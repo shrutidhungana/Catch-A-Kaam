@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Catch-A-Kaam/static/css/main.a1cdd609.css",
+    "main.js": "/Catch-A-Kaam/static/js/main.4c41f498.js",
+    "static/media/image.jpg": "/Catch-A-Kaam/static/media/image.f9c96db6785929408485.jpg",
+    "static/media/background.jpg": "/Catch-A-Kaam/static/media/background.c6a8830ab1f4c0fc23fb.jpg",
+    "static/media/img.jpg": "/Catch-A-Kaam/static/media/img.e1c1f89a34a26a93c09c.jpg",
+    "static/media/logo1.png": "/Catch-A-Kaam/static/media/logo1.563101ef7a0841d7ea03.png",
+    "static/media/img1.jpeg": "/Catch-A-Kaam/static/media/img1.b195d04833b289488dad.jpeg",
+    "index.html": "/Catch-A-Kaam/index.html",
+    "main.a1cdd609.css.map": "/Catch-A-Kaam/static/css/main.a1cdd609.css.map",
+    "main.4c41f498.js.map": "/Catch-A-Kaam/static/js/main.4c41f498.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1cdd609.css",
+    "static/js/main.4c41f498.js"
+  ]
+}
