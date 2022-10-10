@@ -1,6 +1,6 @@
-import React from 'react'
-import Heading from './Heading'
-import ProjectList from '../Activity/ProjectList/ProjectList'
+import React from "react";
+import Heading from "./Heading";
+import ProjectList from "../Activity/ProjectList/ProjectList";
 
 const Dashboard = () => {
   return (
@@ -8,7 +8,7 @@ const Dashboard = () => {
       <Heading />
       <ProjectList />
     </div>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;

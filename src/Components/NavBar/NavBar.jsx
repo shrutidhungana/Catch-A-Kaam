@@ -1,11 +1,8 @@
-import React, {useState, useEffect} from 'react'
-import { Link } from 'react-router-dom'
-import { Nav, List, } from './NavBarStyle'
-import './NavBar.css'
-import {
-  getAuth,
-  onAuthStateChanged
-} from 'firebase/auth';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Nav, List } from "./NavBarStyle";
+import "./NavBar.css";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 const NavBar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -18,76 +15,70 @@ const NavBar = () => {
   }, []);
 
   return (
-      <Nav>
+    <Nav>
       <List>
-        {!isLoggedIn &&
-          
-            <div>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-            </div>
-        }
-        {!isLoggedIn &&
-          <div>
-            <li>
-              <Link to="/about">About us</Link>
-            </li>
-          </div>
-        }
-        {!isLoggedIn &&
-          <div>
-            <li>
-              <Link to="/contact">Contact Us</Link>
-            </li>
-          </div>
-        }
-          
-        {isLoggedIn&&
+        {!isLoggedIn && (
           <div>
             <li>
               <Link to="/">Home</Link>
             </li>
           </div>
-        }
-        {isLoggedIn&& 
+        )}
+        {!isLoggedIn && (
           <div>
             <li>
               <Link to="/about">About us</Link>
             </li>
           </div>
-        }
-
-      
-        {isLoggedIn&&
-          <div>
-            <li>
-              <Link to="/addproject">Add Project</Link>
-            </li>
-          </div>
-        }
-        
-        {isLoggedIn&&
-          <div>
-            
-            <li>
-              <Link to="/dashboard">Dashboard</Link>
-            </li>
-          </div>
-        }
-        {isLoggedIn&&
+        )}
+        {!isLoggedIn && (
           <div>
             <li>
               <Link to="/contact">Contact Us</Link>
             </li>
           </div>
-        }
-       
-      </List>
-      
-      
-      </Nav>
-  )
-}
+        )}
 
-export default NavBar
+        {isLoggedIn && (
+          <div>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+          </div>
+        )}
+        {isLoggedIn && (
+          <div>
+            <li>
+              <Link to="/about">About us</Link>
+            </li>
+          </div>
+        )}
+
+        {isLoggedIn && (
+          <div>
+            <li>
+              <Link to="/addproject">Add Project</Link>
+            </li>
+          </div>
+        )}
+
+        {isLoggedIn && (
+          <div>
+            <li>
+              <Link to="/dashboard">Dashboard</Link>
+            </li>
+          </div>
+        )}
+        {isLoggedIn && (
+          <div>
+            <li>
+              <Link to="/contact">Contact Us</Link>
+            </li>
+          </div>
+        )}
+      </List>
+    </Nav>
+  );
+};
+
+export default NavBar;

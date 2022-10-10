@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 
 import { Link } from "react-router-dom";
 import Banners from "./Banner/Banners";
-import { Homepage, Button } from "./HomepageStyle";
+import { Homepage, Button, Heading, Paragraph,Para } from "./HomepageStyle";
 import Text from "./Text/Text";
 import "./Homepage.css";
 import {
@@ -22,12 +22,12 @@ const Homepages = () => {
   return (
     <Homepage>
       <div>
-        <h1>Welcome to Catch-A-Kaam</h1>
+        <Heading>Welcome to Catch-A-Kaam</Heading>
         <Banners />
         <Text />
         {!isLoggedIn &&
           <div>
-        <p>Please login or register to continue</p>
+        <Para>Please login or register to continue</Para>
         
           <Button>
             <Link to="/login" className="link">Login</Link>
@@ -35,7 +35,8 @@ const Homepages = () => {
             </div>
         }
       
-    
+        <Paragraph>Start exploring the website</Paragraph>
+      
       </div>
     </Homepage>
   );

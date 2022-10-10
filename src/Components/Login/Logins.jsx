@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import {
@@ -11,11 +11,11 @@ import {
   Inputs,
   Input,
   Label,
-  Labels
+  Labels,
 } from "./LoginStyle";
 import "./Login.css";
 import { useUserAuth } from "../../Context/UserAuthContext";
-import {  Alert } from "react-bootstrap";
+import { Alert } from "react-bootstrap";
 import GoogleButton from "react-google-button";
 
 const Logins = () => {
@@ -44,20 +44,16 @@ const Logins = () => {
     } catch (error) {
       console.log(error.message);
     }
-  }
-
+  };
 
   return (
     <div className="background">
       <Heading>Enter your login details in the form below:</Heading>
-      {error && <Alert variant="danger">
-        {error}
-      </Alert>}
+      {error && <Alert variant="danger">{error}</Alert>}
       <Login>
-        <form onSubmit = {handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <Labels>
-            <Label htmlFor="email">Email:
-            </Label>
+            <Label htmlFor="email">Email:</Label>
           </Labels>
           <Inputs>
             <Input
@@ -65,12 +61,11 @@ const Logins = () => {
               placeholder="E-mail"
               required
               name="email"
-              onChange = {(e) => setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </Inputs>
           <Labels>
-            <Label htmlFor="password">Password:
-            </Label>
+            <Label htmlFor="password">Password:</Label>
           </Labels>
           <Inputs>
             <Input
@@ -78,21 +73,18 @@ const Logins = () => {
               placeholder="Password"
               required
               name="email"
-              onChange = {(e) => setPassword(e.target.value)}
+              onChange={(e) => setPassword(e.target.value)}
             />
           </Inputs>
-          <Button
-            varient = "primary"
-            type="submit">
+          <Button varient="primary" type="submit">
             Login
           </Button>
           <Paragraph2>OR</Paragraph2>
           <Paragraph2>
-            
-            <GoogleButton 
+            <GoogleButton
               className="g-btn"
               type="dark"
-              onClick = {handleGoogleSignIn}
+              onClick={handleGoogleSignIn}
             />
           </Paragraph2>
           <Paragraph>Don't have an Account?</Paragraph>

@@ -1,20 +1,16 @@
-import React from 'react'
+import React from "react";
 
-import AppRouter from './AppRouter/AppRouter'
-import { UserAuthContextProvider } from './Context/UserAuthContext'
-
+import AppRouter from "./AppRouter/AppRouter";
+import { UserAuthContextProvider } from "./Context/UserAuthContext";
 
 const App = () => {
   return (
     <div>
       <UserAuthContextProvider>
-      
-          <AppRouter />
-          
-        </UserAuthContextProvider>
+        <AppRouter />
+      </UserAuthContextProvider>
     </div>
-    
-  )
-}
+  );
+};
 
-export default App
+export default App;

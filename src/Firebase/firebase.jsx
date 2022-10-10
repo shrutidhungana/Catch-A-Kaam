@@ -7,10 +7,10 @@ const firebaseConfig = {
   storageBucket: "catch-a-kaam-28a62.appspot.com",
   messagingSenderId: "347908351961",
   appId: "1:347908351961:web:2a198c762f6bca64de1bc8",
-  measurementId: "G-3SC6K8LDES"
+  measurementId: "G-3SC6K8LDES",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
-export default app
+export default app;

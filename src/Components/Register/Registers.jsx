@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link, useNavigate} from "react-router-dom";
-import {  Alert } from "react-bootstrap";
+import { Link, useNavigate } from "react-router-dom";
+import { Alert } from "react-bootstrap";
 import "./Register.css";
 
 import { useUserAuth } from "../../Context/UserAuthContext";
@@ -13,14 +13,14 @@ import {
   Labels,
   Label,
   Input,
-  Inputs
+  Inputs,
 } from "./RegisterStyle";
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
   const [password, setPassword] = useState("");
   const { signUp } = useUserAuth();
-  let navigate = useNavigate()
+  let navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -34,15 +34,13 @@ const Signup = () => {
   };
 
   return (
-      <div className = "background">
-      
-        <Heading>Enter the following to register:</Heading>
+    <div className="background">
+      <Heading>Enter the following to register:</Heading>
       {error && <Alert variant="danger">{error}</Alert>}
       <Register>
         <form onSubmit={handleSubmit}>
-         
-            <Labels>
-              <Label htmlFor="email">Email:</Label>
+          <Labels>
+            <Label htmlFor="email">Email:</Label>
           </Labels>
           <Inputs>
             <Input
@@ -51,10 +49,10 @@ const Signup = () => {
               required
               onChange={(e) => setEmail(e.target.value)}
             />
-            </Inputs>
-          
-            <Labels>
-              <Label htmlFor="password">Password:</Label>
+          </Inputs>
+
+          <Labels>
+            <Label htmlFor="password">Password:</Label>
           </Labels>
           <Inputs>
             <Input
@@ -62,27 +60,19 @@ const Signup = () => {
               placeholder="Password"
               onChange={(e) => setPassword(e.target.value)}
             />
-            </Inputs>
+          </Inputs>
 
-          
-            <Button variant="primary" type="Submit">
-              Create Account
-            </Button>
-          
-          <Paragraph>
-            Already have an account?
-          </Paragraph>
+          <Button variant="primary" type="Submit">
+            Create Account
+          </Button>
+
+          <Paragraph>Already have an account?</Paragraph>
           <Paragraph1 className="paragraph">
-          <Link to="/login">
-          Log In
-        </Link>
+            <Link to="/login">Log In</Link>
           </Paragraph1>
-            
-      
         </form>
       </Register>
-     
-      </div>
+    </div>
   );
 };
 

@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from "react";
-
 import emailjs from "emailjs-com";
 import InputField from "./InputField";
 import TextAreaField from "./TextAreaField";
 import SelectField from "./SelectField";
 import {
- Container,
+  Container,
   Heading,
   FormControl,
   Button,
-    Form,
-    Render,
-  Renders
+  Form,
+  Render,
+  Renders,
 } from "./ContactFormStyle";
 
 const ContactForm = () => {

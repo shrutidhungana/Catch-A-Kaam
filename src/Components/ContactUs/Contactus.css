@@ -7,8 +7,8 @@
   height: 100vh;
 }
 
-@media(max-width: 768px){
-    .bg{
-        background-repeat: repeat-x;
-    }
+@media (max-width: 768px) {
+  .bg {
+    background-repeat: repeat-x;
+  }
 }

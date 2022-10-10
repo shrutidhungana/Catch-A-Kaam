@@ -1,18 +1,16 @@
-import React from 'react'
-import AddForm from './AddForm/AddForm'
-import {Heading, Div } from './AddProjectStyle'
-
+import React from "react";
+import AddForm from "./AddForm/AddForm";
+import { Heading, Div } from "./AddProjectStyle";
 
 const AddProject = () => {
   return (
-      <div>
+    <div>
       <Heading>Add Project of Your Choice:</Heading>
       <Div>
-      <AddForm />
+        <AddForm />
       </Div>
-      </div>
-     
-  )
-}
+    </div>
+  );
+};
 
-export default AddProject
+export default AddProject;

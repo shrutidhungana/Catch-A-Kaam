@@ -1,24 +1,25 @@
-.add{
-    border-radius: 50%;
-    width: 25px;
-    background-color:#006400;
-    color: white;
-    font-size: 25px;
-    height: 25px;
+.add {
+  border-radius: 50%;
+  width: 25px;
+  background-color: #006400;
+  color: white;
+  font-size: 25px;
+  height: 25px;
 }
 
-.button{
-    color: white;
+.button {
+  color: white;
 }
 
-.edit{
-    border-radius: 50%;
-    width: 25px;
-    background-color:#006400;
-    color: white;
-    font-size: 25px;
-    height: 25px;
-    padding: 7px;
-    float: right;
-    margin-right: -30px;
+.edit {
+  border-radius: 50%;
+  width: 25px;
+  background-color: #006400;
+  color: white;
+  font-size: 25px;
+  height: 25px;
+  padding: 7px;
+  float: right;
+  margin-right: 200px;
+  margin-top: -20px;
 }

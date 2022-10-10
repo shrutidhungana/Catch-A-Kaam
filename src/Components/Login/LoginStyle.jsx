@@ -42,11 +42,10 @@ export const Paragraph1 = styled.p`
 `;
 
 export const Paragraph2 = styled.p`
-text-align: center;
-`
+  text-align: center;
+`;
 export const Inputs = styled.div`
   font-size: 18px;
-  
 `;
 export const Labels = styled.div`
   margin: 30px 0 0 0;

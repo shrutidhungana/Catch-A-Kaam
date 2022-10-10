@@ -12,9 +12,9 @@ import {
   Column,
   Heading,
   Paragraph,
-  Span
+  Span,
 } from "./FooterStyle";
-import "./Footer.css"
+import "./Footer.css";
 
 const Footers = () => {
   return (
@@ -78,12 +78,11 @@ const Footers = () => {
               </a>
             </p>
           </Column>
-          </Row>
-          <Paragraph>
-          &copy; {new Date().getFullYear()}<Span>Shruti Dhungana.</Span> All Rights Reserved
-          </Paragraph>
-         
-        
+        </Row>
+        <Paragraph>
+          &copy; {new Date().getFullYear()}
+          <Span>Shruti Dhungana.</Span> All Rights Reserved
+        </Paragraph>
       </Container>
     </Footer>
   );
